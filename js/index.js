@@ -21,14 +21,15 @@ if (hacker1.length > hacker2.length){
 
 
 // Iteration 3: Loops
-let hacker1Caps = ' '
+let hacker1Caps = ''
 for (let i of hacker1){
     hacker1Caps +=  i.toUpperCase() + " "
 }
 console.log(hacker1Caps)
 
-
-let hacker2Rev = null
-for (let x = hacker2.length; x = 0; x--){
-    console.log(x)
+let hacker2Rev = ''
+for (let x = hacker2.length -1; x >= 0; x--){
+    hacker2Rev += hacker2[x]
 }
+
+console.log(hacker2Rev)
